@@ -1,8 +1,14 @@
-body {
+body, .img {
     margin: 0;
-    
+	height: 200vh;
+	background-image: url(../images/pexels-clouds.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
+
+/* 
 .screen {
 	width: 100%;
 	min-height: 100vh;
@@ -14,7 +20,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+*/
 
+/* 
 .form {
 	box-sizing: border-box;
 	max-width: 500px;
@@ -153,8 +161,9 @@ body {
     background-color: rgba(223, 223, 220, 0.3);
     color: white;
 }
+*/
 
-/* Styling Checkbox Starts */
+/* Styling Checkbox Starts 
 .checkbox-label {
 	display: block;
 	position: relative;
@@ -222,8 +231,9 @@ border-width: 0 2px 2px 0;
 background-color: transparent;
 border-radius: 0;
 }
+*/
 
-/* For Ripple Effect */
+/* For Ripple Effect 
 .checkbox-label .checkbox-custom::before {
 	position: absolute;
 	content: "";
@@ -247,8 +257,8 @@ border-radius: 0;
 	z-index: 999;
 	transition: all 0.3s ease-out;
 }
-
-/* events styling */
+*/
+/* events styling 
 
 .input-field:focus, .textarea:focus, .select:focus, .checkbox-custom:focus, .button:focus {
 	outline: none;
@@ -273,3 +283,4 @@ border-radius: 0;
 	color: rgba(70, 96, 96, 1);
 	opacity: 0.6;
 }
+*/

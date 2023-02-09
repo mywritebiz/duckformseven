@@ -9,20 +9,19 @@
 	<link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-	<main>
-		<h1>Please Fill Out My Simple Form</h1>
-			<form action="/action_page.php">
-		<label for="fname">First Name</label>
-    	<input type="text" placeholder="Enter your first name" id="fname" name="fname">
-		<br><br>
-		<label for="lname">Last Name</label>
-		<input type="text" placeholder="Enter your last name" id="lname" name="lname">
-		<br><br>
-		<button type="submit">Submit</button>
-		<br><br>
-    	<textarea name="message" id="" cols="10" rows="3"></textarea>
-    	
-			</form>
+	<h1 class="main-title">Please Fill Out My Simple Form</h1>
+	<main class="screen">
+		<form action="/action_page.php" class="form" autocomplete="off">
+			<label for="fname">First Name</label>
+			<input type="text" placeholder="Enter your first name" id="fname" name="fname">
+			<br><br>
+			<label for="lname">Last Name</label>
+			<input type="text" placeholder="Enter your last name" id="lname" name="lname">
+			<br><br>
+			<textarea name="message" placeholder="Type your SSN here!" id="" cols="30" rows="10"></textarea>
+			<br><br>
+			<button type="submit">Submit</button>
+		</form>
 	</main>
 </body>
 </html>

@@ -6,23 +6,44 @@ body, .img {
 	background-position: center;
 	background-attachment: fixed;
 }
+.main-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+	margin-top: 1em;
+}
 
-
-/* 
 .screen {
 	width: 100%;
-	min-height: 100vh;
 	display: flex;
-	justify-content: flex-end;
-    align-items: center;
-    background-image: url(../images/orange-cat.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 6em;
 }
-*/
-
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
+  textarea[name=message] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
 /* 
+
+
+.main-title, .main-info {
+    text-align: center;
+    border: 2px solid rgba(70, 96, 96, 1);
+	background-color: rgba(237, 177, 201, 0.7);
+}
 .form {
 	box-sizing: border-box;
 	max-width: 500px;
@@ -37,18 +58,9 @@ body, .img {
 	align-items: stretch;
     justify-content: end;
     margin-right: 150px;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'Baloo Tamma 2'
 }
 
-.main-title, .main-info {
-    text-align: center;
-    border: 2px solid rgba(70, 96, 96, 1);
-	background-color: rgba(237, 177, 201, 0.7);
-}
-
-.main-title {
-    font-family: 'Abril Fatface', cursive;
-}
 
 .main-info {
     font-size: 18px;

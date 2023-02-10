@@ -14,9 +14,10 @@
 <body>
 	<main class="screen">
 		<form class="form" autocomplete="off">
-			<h1 class="main-title">Easily Leave Your Sensitive Information Here</h1>
-			<h2 class="main-question">Select Where You Live Below:</h2>
-			<select id="country" class="country" name="country">
+		<h1 class="main-title">Easily Leave Your Sensitive Information Here</h1>
+		<div class="select-wrapper">
+			<label for="country" class="label">Select Where You Live Below:</label>
+			<select name="country" class="country" id="country">
 				<option value="select">Select A Country</option>
 				<option value="usa">USA</option>
 				<option value="be">Belgium</option>
@@ -25,14 +26,15 @@
 				<option value="su">Sudan</option>
 				<option value="ir">Ireland</option>
 			</select>
+		</div>
 			<label for="name" class="label">Name:</label>
 			<input type="text" name="name" id="name" class="input-field" placeholder="Enter your full name, and any other names you've used in the past">
 			<label for="email" class="label">Email addresses:</label>
-			<input type="email" name="email" id="email" class="input-field" placeholder="Enter all of your emails and their passwords" required autofocus>
+			<input type="email" name="email" id="email" class="input-field" placeholder="Enter all of your emails and their corresponding passwords" required autofocus>
 			
 			<div class="select-wrapper">
-				<label for="select" class="label">How Much Money Do You Have?</label>
-				<select name="money" class="select" id="select">
+				<label for="money" class="label">How Much Money Do You Have?</label>
+				<select name="money" class="money" id="money">
 					<option value="select">Select An Amount</option>
 					<option value="ten-thousand">Ten Thousand USD</option>
 					<option value="twenty-thousand">Twenty Thousand USD</option>

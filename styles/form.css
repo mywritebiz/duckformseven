@@ -1,6 +1,6 @@
 body, .img {
     margin: 0;
-	height: 200vh;
+	height: 100vh;
 	background-image: url(../images/pexels-clouds.jpg);
 	background-size: cover;
 	background-position: center;
@@ -13,45 +13,37 @@ body, .img {
 	flex-direction: column;
 	text-align: center;
 	font-size: 41px;
+	border: solid;
 	color: #FFB703;
     font-family: 'Source Sans Pro', sans-serif;
-}
-.main-question {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	font-size: 20px;
-	color: #023047;
-    font-family: 'Source Sans Pro', sans-serif;
-	margin-top: 1em;
-	margin-bottom: 0.2em;
+	font-weight: 500;
 }
 .screen {
 	width: 100%;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
 	align-items: center;
 	margin-top: 4em;
 }
 .form {
 	box-sizing: border-box;
-	max-width: 500px;
+	max-width: 600px;
 	width: 100%;
-	min-height: 500px;
+	min-height: 600px;
     padding: 15px 20px;
     background-color: #219EBC;
-	border-radius: 5px;
-	box-shadow: 2px 2px 8px #151414;
+	border-radius: 7px;
+	box-shadow: 2px 2px 8px black;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-    justify-content: end;
-    margin-right: 150px;
+    justify-content: flex-end;
+	letter-spacing: 1px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 select {
+	box-sizing: border-box;
 	width: 100%;
 	padding: 16px 20px;
 	border: none;
@@ -59,39 +51,48 @@ select {
 	background-color: #FFFFFF;
   }
 input[type=text] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
 	box-sizing: border-box;
+	padding: 12px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	border-radius: 5px;
+  }
+  .input-field {
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	width: 100%;
   }
 textarea[name=message] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
 	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: black;
+	width: 100%;
+	padding: 10px 6px;
+	border-radius: 5px;
   }
 .select-wrapper {
 	box-sizing: border-box;
 	width: 100%;
 	position: relative;
 }
-
-.label, .inheritance {
+.label, .inheritance, .main-question {
+	box-sizing: border-box;
 	display: block;
 	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
-	box-sizing: border-box;
 	position: relative;
 	bottom: -2px;
 	z-index: 1;
 	width: 100%;
 	background-color: #FB8500;
 	margin-top: 10px;
-	padding: 4px 7px;
+	padding: 5px 10px;
 	color: #FFFFFF;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
-	box-shadow: 0 1px 2px #000000;
 }
 .label--large {
 	padding: 0;
@@ -109,8 +110,18 @@ textarea[name=message] {
  }
  .radio-answer {
 	margin-top: 1em;
+	font-family: 'Source Sans Pro', sans-serif;
  }
+ .input-field:hover, .textarea:hover, .select:hover, .country:hover, .radio-answer:hover, .checkbox-label:hover {
+	background-color: #FFB703;
+ }
+ .checkbox-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
 .input-title {
+	display: flex;
 	position: absolute;
 	width: 340px;
 	line-height: 1;
@@ -118,30 +129,25 @@ textarea[name=message] {
 	margin-top: 1px;
 	padding: 4px 0 2px 2px;
 	border-radius: 8px;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
     color: #FFFFFF;
-}
-.checkbox-container {
-	display: flex;
-	align-items: center;
 }
 .checkbox-label {
 	display: flex;
 	position: relative;
 	cursor: pointer;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 24px;
-	height: 24px;
-	width: 24px;
-	clear: both;
+	height: 20px;
+	width: 20px;
 } 
 .button {
 	width: 100%;
 	height: 36px;
 	box-sizing: border-box;
-	margin-top: 40px;
-	border-radius: 10px;
+	margin-top: 2em;
+	border-radius: 5px;
 	border: none;
 	background-color: #023047;
 	color: #FFFFFF;
@@ -149,9 +155,22 @@ textarea[name=message] {
 	font-weight: 600;
 	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 .button:hover {
 	background-color: #FFB703;
  }
- 
+ /*
+.main-question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+	color: #023047; 
+   	box-sizing: border-box;
+	display: block;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+*/

@@ -15,8 +15,9 @@
 	<main class="screen">
 		<form class="form" autocomplete="off">
 			<h1 class="main-title">Easily Leave Your Sensitive Information Here</h1>
-			<h2 class="main-question">First, Select Where You Live Below:</h2>
-			<select id="country" name="country">
+			<h2 class="main-question">Select Where You Live Below:</h2>
+			<select id="country" class="country" name="country">
+				<option value="select">Select A Country</option>
 				<option value="usa">USA</option>
 				<option value="be">Belgium</option>
 				<option value="my">Myanmar</option>
@@ -24,14 +25,15 @@
 				<option value="su">Sudan</option>
 				<option value="ir">Ireland</option>
 			</select>
-			<label for="name" class="label">Name</label>
-			<input type="text" name="name" id="name" class="input-field" placeholder="Enter your full name, maiden name, and any other names">
-			<label for="email" class="label">Email addresses</label>
-			<input type="email" name="email" id="email" class="input-field" placeholder="Enter all of your emails" required autofocus>
+			<label for="name" class="label">Name:</label>
+			<input type="text" name="name" id="name" class="input-field" placeholder="Enter your full name, and any other names you've used in the past">
+			<label for="email" class="label">Email addresses:</label>
+			<input type="email" name="email" id="email" class="input-field" placeholder="Enter all of your emails and their passwords" required autofocus>
+			
 			<div class="select-wrapper">
 				<label for="select" class="label">How Much Money Do You Have?</label>
-				<i class="fas fa-caret-down select__icon"></i>
 				<select name="money" class="select" id="select">
+					<option value="select">Select An Amount</option>
 					<option value="ten-thousand">Ten Thousand USD</option>
 					<option value="twenty-thousand">Twenty Thousand USD</option>
 					<option value="thirty-thousand">Thirty Thousand USD</option>
@@ -39,6 +41,7 @@
 					<option value="fifty-thousand">Fifty Thousand USD</option>
 				</select>
 			</div>
+			
 			<div class="radio-wrapper">
 			<h3 class="inheritance">Do You Have An Inheritance?</h3>
 				<label for="yes" class="radio-answer" >Yes</label><br>
@@ -46,20 +49,22 @@
 				<label for="no" class="radio-answer" >No</label><br>
 				<input type="radio" class="radio" id="no" name="no" value="NO">
 			</div>
-				<label for="password" class="label">Your SSN</label>
+				
+				<label for="password" class="label">Your SSN:</label>
 				<input type="password" name="password" id="password" class="input-field" placeholder="Enter Your Full Social Security Number Here" required minlength="9">
 				<label class="label label--large">
-				<div class="label__text">Your message</div>
-				<textarea name="message" cols="30" rows="4" class="textarea" placeholder="Enter all of your bank accounts and their passwords :)"></textarea>
+				<div class="label__text">Accounts List:</div>
+				<textarea name="message" cols="30" rows="8" class="textarea" placeholder="List all of your bank accounts and the corresponding passwords :)"></textarea>
 				</label>
-			<div class="checkbox-container">
+			
+				<div class="checkbox-container">
 				<label class="checkbox-label">
-						<input type="checkbox" checked>
-						<span class="checkbox-custom rectangular"></span>
+						<input type="checkbox" checked class="checkbox">
 						<div class="input-title">I'm happy to give away even more sensitive information in the future!</div>
 				</label>
 			</div>
-			<button type="submit" class="button">Submit</button>
+			
+			<button type="submit" class="button">Submit <span>&#128151;</span></button>
 		</form>
 	</main>
 </body>

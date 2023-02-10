@@ -7,20 +7,58 @@
 	<title>My First Form</title>
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1 class="main-title">Please Fill Out My Simple Form</h1>
 	<main class="screen">
-		<form action="/action_page.php" class="form" autocomplete="off">
-			<label for="fname">First Name</label>
-			<input type="text" placeholder="Enter your first name" id="fname" name="fname">
-			<br><br>
-			<label for="lname">Last Name</label>
-			<input type="text" placeholder="Enter your last name" id="lname" name="lname">
-			<br><br>
-			<textarea name="message" placeholder="Type your SSN here!" id="" cols="30" rows="10"></textarea>
-			<br><br>
-			<button type="submit">Submit</button>
+		<form class="form" autocomplete="off">
+			<h1 class="main-title">Please Leave Your Sensitive Information</h1>
+			<h2 class="main-question">First, Select Where You Live Below:</h2>
+			<select id="country" name="country">
+				<option value="usa">USA</option>
+				<option value="be">Belgium</option>
+				<option value="my">Myanmar</option>
+				<option value="ca">Canada</option>
+				<option value="su">Sudan</option>
+				<option value="ir">Ireland</option>
+			</select>
+			<label for="name" class="label">Name</label>
+			<input type="text" name="name" id="name" class="input-field" placeholder="Enter your full name, maiden name, and any other names">
+			<label for="email" class="label">Email addresses</label>
+			<input type="email" name="email" id="email" class="input-field" placeholder="Enter all of your emails" required autofocus>
+			<div class="select-wrapper">
+				<label for="select" class="label">How Much Money Do You Have?</label>
+				<i class="fas fa-caret-down select__icon"></i>
+				<select name="money" class="select" id="select">
+					<option value="ten-thousand">Ten Thousand</option>
+					<option value="twenty-thousand">Twenty Thousand USD</option>
+					<option value="thirty-thousand">Thirty Thousand USD</option>
+					<option value="forty-thousand">Forth Thousand USD</option>
+					<option value="fifty-thousand">Fifty Thousand USD</option>
+				</select>
+			</div>
+			<h3 class="inheritance">Do You Have An Inheritance?</h3>
+				<input type="radio" id="html" name="fav_language" value="HTML">
+				<label for="html">Yes</label><br>
+				<input type="radio" id="css" name="fav_language" value="CSS">
+				<label for="css">No</label><br>
+			
+				<label for="password" class="label">Your password</label>
+				<input type="password" name="password" id="password" class="input-field" placeholder="Enter Your SSN" required minlength="9">
+			<label class="label label--large">
+				<div class="label__text">Your message</div>
+				<textarea name="message" cols="30" rows="4" class="textarea" placeholder="Enter all of your other passwords and accounts :)"></textarea>
+			</label>
+			<div class="checkbox-container">
+				<label class="checkbox-label">
+						<input type="checkbox" checked>
+						<span class="checkbox-custom rectangular"></span>
+						<div class="input-title">I'm happy to give more sensitive information in the future!</div>
+				</label>
+			</div>
+			<button type="submit" class="button">Submit</button>
 		</form>
 	</main>
 </body>

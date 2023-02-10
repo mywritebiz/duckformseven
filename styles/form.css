@@ -101,6 +101,15 @@ textarea[name=message] {
  .label__text {
 	padding: 4px 7px;
  }
+ .radio-wrapper {
+	display: flex;
+ }
+ .radio {
+	margin-top: 1em;
+ }
+ .radio-answer {
+	margin-top: 1em;
+ }
 .input-title {
 	position: absolute;
 	width: 340px;

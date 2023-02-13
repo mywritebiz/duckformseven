@@ -109,7 +109,7 @@ textarea[name=message] {
 	margin-top: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
  }
- .input-field:hover, .textarea:hover, .select:hover, .country:hover, .money:hover, .radio-answer:hover, .checkbox-label:hover {
+ .input-field:hover, .textarea:hover, .select:hover, .country:hover, .money:hover, .radio-answer:hover, .checkbox-label:hover, .button:hover {
 	background-color: #FFB703;
  }
  .checkbox-container {
@@ -152,9 +152,6 @@ textarea[name=message] {
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 2px;
 }
-.button:hover {
-	background-color: #FFB703;
- }
  /*
 notes
 */

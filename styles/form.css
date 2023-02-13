@@ -118,7 +118,7 @@ textarea[name=message] {
 .input-title {
 	display: flex;
 	position: absolute;
-	width: 340px;
+	width: 300px;
 	line-height: 1;
 	margin-left: 41px;
 	margin-top: 1px;
@@ -153,5 +153,5 @@ textarea[name=message] {
 	letter-spacing: 2px;
 }
  /*
-notes
+Remember to use max-width when the element is larger than 250px.  
 */
